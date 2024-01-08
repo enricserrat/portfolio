@@ -1,0 +1,12 @@
+<svg width="52" height="598" viewBox="0 0 52 598" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.2008 11.3986L12.2008 585.834" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<circle cx="11.082" cy="11.082" r="10.082" transform="matrix(0 1 1 0 1.7049 107.41)" fill="white" stroke="black" stroke-width="2"/>
+<circle cx="11.082" cy="11.082" r="10.082" transform="matrix(0 1 1 0 1.7049 0)" fill="white" stroke="black" stroke-width="2"/>
+<circle cx="11.9344" cy="11.9344" r="10.9344" transform="matrix(0 1 1 0 0 573.705)" fill="white" stroke="black" stroke-width="2"/>
+<line y1="-1" x2="29.2284" y2="-1" transform="matrix(1 -4.37114e-08 -4.37114e-08 -1 12.2008 177.806)" stroke="black" stroke-width="2"/>
+<line y1="-1" x2="22.6033" y2="-1" transform="matrix(1 -4.37114e-08 -4.37114e-08 -1 12.2008 467.751)" stroke="black" stroke-width="2"/>
+<line y1="-1" x2="39.7506" y2="-1" transform="matrix(0 1 1 0 41.4292 178.195)" stroke="black" stroke-width="2"/>
+<line y1="-1" x2="233.048" y2="-1" transform="matrix(0 1 1 0 41.4292 229.637)" stroke="black" stroke-width="2"/>
+<path d="M40.4918 478.082C46.3312 478.082 51 473.533 51 468C51 462.467 46.3312 457.918 40.4918 457.918C34.6524 457.918 29.9836 462.467 29.9836 468C29.9836 473.533 34.6524 478.082 40.4918 478.082Z" fill="#79B7E8" stroke="black" stroke-width="2"/>
+<circle cx="11.082" cy="11.082" r="10.082" transform="matrix(0 1 1 0 29.8361 211.41)" fill="#79B7E8" stroke="black" stroke-width="2"/>
+</svg>

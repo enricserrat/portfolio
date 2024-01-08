@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- FONTAWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/02ae4acaa4.js" crossorigin="anonymous"></script>
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- INTER FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Enric Serrat | Frontend Developer & Web Designer</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <div class="logo">
+            <img src="/img/logo-light.svg" alt="Logo de Enric Serrat" draggable="false">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#quien-soy-skills">Skills</a></li>
+                <li><a href="#api-projects">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+            </ul>
+        </nav>
+
+        <a class="btn" href="#contacto"><button>Contacto</button></a>
+
+        <a onclick="openNav()" class="menu" href="#"><button><i class="fa-sharp fa-solid fa-bars"></i></button></a>
+
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="#" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="https://enricserrat.com/index.html#quien-soy-skills" onclick="closeNav()">Skills</a>
+                <a href="https://enricserrat.com/index.html#api-projects" onclick="closeNav()">Proyectos</a>
+                <a href="https://enricserrat.com/index.html#experiencia" onclick="closeNav()">Experiencia</a>
+                <a href="https://enricserrat.com/index.html#contacto" onclick="closeNav()">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO CONTENT -->
+    <section id="hero-content" class="container-fluid">
+        <div class="row">
+
+            <!-- (SQUARE 1) HERO CONTENT -->
+            <div class="square col-lg-6 col-md-12" id="hero-info">
+                <h1>Enric Serrat</h1>
+                <h2 class="animate__animated animate__backInLeft">Frontend Developer</h2>
+                <h2 class="animate__animated animate__backInRight">Web Designer</h2>
+                <div class="iconos-rrss">
+                    <a href="https://github.com/enricserrat" target="_blank">
+                        <span><i class="icono-rrss fa-brands fa-github"></i></span>
+                    </a>
+                    <a href="https://linkedin.com/in/enric-serrat-marc%C3%A9-b885ab204/" target="_blank">
+                        <span><i class="icono-rrss fa-brands fa-linkedin"></i></span>
+                    </a>
+                    <a href="https://behance.net/enric-serrat" target="_blank">
+                        <span><i class="icono-rrss fa-brands fa-square-behance"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- (SQUARE 2) HERO LOGO -->
+            <div class="square col-lg-6 col-md-12" id="hero-logo" style="background-color: #00457C;"></div>
+        </div>
+    </section>
+
+    <!-- QUIEN SOY Y SKILLS -->
+    <section id="quien-soy-skills" class="container-fluid">
+        <div class="row">
+
+            <!-- (SQUARE 3) SKILLS LOGOS -->
+            <div class="square col-lg-6 col-md-12 text-white" id="skills-logos">
+                <i class="icono-skill fab fa-js"></i>
+                <i class="icono-skill fab fa-react"></i>
+                <i class="icono-skill fab fa-html5"></i>
+                <i class="icono-skill fab fa-css3-alt"></i>
+                <i class="icono-skill fab fa-php"></i>
+                <i class="icono-skill fab fa-angular"></i>
+                <i class="icono-skill fab fa-android"></i>
+                <i class="icono-skill fab fa-bootstrap"></i>
+                <i class="icono-skill fab fa-python"></i>
+                <i class="icono-skill fab fa-git"></i>
+                <i class="icono-skill fab fa-node-js"></i>
+                <i class="icono-skill fab fa-sass"></i>
+                <i class="icono-skill fab fa-less"></i>
+                <i class="icono-skill fab fa-npm"></i>
+                <i class="icono-skill fab fa-vuejs"></i>
+                <i class="icono-skill fab fa-docker"></i>
+            </div>
+
+            <!-- (SQUARE 4) QUIEN SOY Y SKILLS INFO -->
+            <div class="square square-text col-lg-6 col-md-12" id="quien-soy">
+                <h2>¿Quien soy?</h2>
+                <h2>¿Cuáles son mis skills?</h2>
+                <p>Hola, soy Enric, un desarrollador Front-End & Diseñador Web apasionado y autodidacta, actualmente
+                    estoy realizando
+                    prácticas para el grado superior DAW en <a href="https://www.lasevaweb.com/ca"
+                        target="_blank">Lasevaweb</a>, colaborando en proyectos innovadores para optimizar experiencias
+                    digitales y potenciar la
+                    presencia online de diversas empresas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- API PROJECTS -->
+    <section id="api-projects" class="container-fluid">
+        <div class="row">
+
+            <!-- (SQUARE 5) API PROJECTS -->
+            <div class="square square-text col-lg-6 col-md-12">
+                <h2>API Projects</h2>
+                <p>Proyectos enfocados en APIs para funciones específicas. Aplicaciones con interfaces intuitivas y
+                    adaptativas, integrando
+                    datos dinámicos y conectándose a servicios externos, mostrando innovación y técnica.</p>
+                <a href="https://eipreveal.enricserrat.com/" target="_blank">
+                    <img src="/img/project-1.svg" alt="Logo de mi proyecto eipreveal" draggable="false">
+                </a>
+            </div>
+
+            <!-- (SQUARE 6) ISO API PROJECTS -->
+            <div class="square col-lg-6 col-md-12" id="api-iso-soft"></div>
+        </div>
+    </section>
+
+    <!-- WEB PROJECTS -->
+    <section id="web-projects" class="container-fluid">
+        <div class="row">
+
+            <!-- (SQUARE 7) WEB PROJECTS -->
+            <div class="square square-text col-lg-6 col-md-12">
+                <h2>WEB Projects</h2>
+                <p>Creación de sitios web completos, ideales para empresas. Diseños atractivos y funcionales, con
+                    enfoque en experiencia de
+                    usuario y optimización. Cada proyecto es una solución digital única, reflejando compromiso con
+                    calidad e innovación.</p>
+                <a href="https://2dev4u.com/" target="_blank">
+                    <img src="/img/project-2.svg" alt="Logo de mi proyecto 2dev4u" draggable="false">
+                </a>
+            </div>
+
+            <!-- (SQUARE 8) ISO WEB PROJECTS -->
+            <div class="square col-lg-6 col-md-12" id="web-iso-blue"></div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="container-fluid">
+        <div class="row">
+
+            <div class="square square-text square-exp col-md-12" id="experiencia">
+                <h2>Experiencia</h2>
+
+                <svg id="svgExperiencia" width="96%" viewBox="0 0 1494 106" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 17H1477" stroke="black" stroke-width="3" stroke-linecap="round" />
+                    <circle id="circulo1" cx="16" cy="17" r="14.5" fill="white" stroke="black" stroke-width="3" />
+                    <circle id="circulo2" cx="250" cy="17" r="14.5" fill="white" stroke="black" stroke-width="3" />
+                    <path id="circuloPath"
+                        d="M1492.5 17C1492.5 25.6029 1485.74 32.5 1477.5 32.5C1469.26 32.5 1462.5 25.6029 1462.5 17C1462.5 8.39706 1469.26 1.5 1477.5 1.5C1485.74 1.5 1492.5 8.39706 1492.5 17Z"
+                        fill="white" stroke="black" stroke-width="3" />
+                    <circle id="circulo3" class="move" cx="547" cy="90" r="14.5" fill="#79B7E8" stroke="black"
+                        stroke-width="3" />
+                    <circle id="circulo4" cx="1176" cy="89" r="14.5" fill="#79B7E8" stroke="black" stroke-width="3" />
+                    <line x1="431.5" y1="17" x2="431.5" y2="92" stroke="black" stroke-width="3" />
+                    <line x1="1175.5" y1="17" x2="1175.5" y2="75" stroke="black" stroke-width="3" />
+                    <line x1="431" y1="90.5" x2="533" y2="90.5" stroke="black" stroke-width="3" />
+                    <line x1="563" y1="90.5" x2="1161" y2="90.5" stroke="black" stroke-width="3" />
+                </svg>
+
+                <!-- SVG MOBILE -->
+                <svg id="svgExperienciaMobile" viewBox="0 0 52 598" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.2008 11.3986L12.2008 585.834" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <circle id="circulo2" cx="11.082" cy="11.082" r="10.082" transform="matrix(0 1 1 0 1.7049 107.41)"
+                        fill="white" stroke="black" stroke-width="2" />
+                    <circle id="circulo1" cx="11.082" cy="11.082" r="10.082" transform="matrix(0 1 1 0 1.7049 0)"
+                        fill="white" stroke="black" stroke-width="2" />
+                    <circle id="circulo5mobile" cx="11.9344" cy="11.9344" r="10.9344"
+                        transform="matrix(0 1 1 0 0 573.705)" fill="white" stroke="black" stroke-width="2" />
+                    <line y1="-1" x2="29.2284" y2="-1"
+                        transform="matrix(1 -4.37114e-08 -4.37114e-08 -1 12.2008 177.806)" stroke="black"
+                        stroke-width="2" />
+                    <line y1="-1" x2="22.6033" y2="-1"
+                        transform="matrix(1 -4.37114e-08 -4.37114e-08 -1 12.2008 467.751)" stroke="black"
+                        stroke-width="2" />
+                    <line y1="-1" x2="39.7506" y2="-1" transform="matrix(0 1 1 0 41.4292 178.195)" stroke="black"
+                        stroke-width="2" />
+                    <line y1="-1" x2="233.048" y2="-1" transform="matrix(0 1 1 0 41.4292 229.637)" stroke="black"
+                        stroke-width="2" />
+                    <path id="circuloPathMobile"
+                        d="M40.4918 478.082C46.3312 478.082 51 473.533 51 468C51 462.467 46.3312 457.918 40.4918 457.918C34.6524 457.918 29.9836 462.467 29.9836 468C29.9836 473.533 34.6524 478.082 40.4918 478.082Z"
+                        fill="#79B7E8" stroke="black" stroke-width="2" />
+                    <circle id="circulo3" cx="11.082" cy="11.082" r="10.082" transform="matrix(0 1 1 0 29.8361 211.41)"
+                        fill="#79B7E8" stroke="black" stroke-width="2" />
+                </svg>
+
+                <p class="exp-text">A la izquierda, mis inicios como Diseñador Gráfico; a la derecha, mi rol actual en
+                    Diseño y Desarrollo Web. Explora mi
+                    trayectoria completa haciendo clic en los puntos destacados.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="container-fluid">
+        <div class="row">
+
+            <div class="square square-text square-contacto col-md-12" id="experiencia">
+                <h2>Contacto</h2>
+
+                <form id="miFormulario">
+                    <div class="form-row">
+                        <div class="form-cntrl">
+                            <input type="text" id="nombre" name="nombre" placeholder="TU NOMBRE"><br>
+                        </div>
+                        <div class="form-cntrl">
+                            <input type="email" id="correo" name="correo" placeholder="TU CORREO"><br>
+                        </div>
+                    </div>
+
+                    <div class="form-cntrl">
+                        <input type="text" id="asunto" name="asunto" placeholder="ASUNTO"><br>
+                    </div>
+
+                    <div class="form-cntrl">
+                        <textarea id="mensaje" name="mensaje" placeholder="MENSAJE"></textarea><br>
+                    </div>
+
+                    <div id="bannerExito">
+                        ¡Mensaje enviado con éxito!
+                    </div>
+
+                    <div id="bannerError">
+                        Por favor, complete todos los campos.
+                    </div>
+
+                    <input type="submit" value="ENVIAR MENSAJE" class="boton-estilo">
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-child image-container">
+            <div>
+                <img src="/img/LOGO-W.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footer-child list-container">
+            <ul>
+                <li><a href="#quien-soy-skills">Sobre mi</a></li>
+                <li><a href="#api-projects">API Projects</a></li>
+                <li><a href="#web-projects">WEB Projects</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+
+
+    <!-- JS MENU MOBILE -->
+    <script>
+        function openNav() {
+            document.getElementById("mobile-menu").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mobile-menu").style.width = "0%";
+        }
+    </script>
+
+    <!-- JS SVG EXPERIENCIA -->
+    <script>
+        // Información para cada círculo
+        var infoCirculos = {
+            circulo1: {
+                titulo: 'CFGM Asistencia al Producto Gráfico Impreso',
+                contenido: `
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>Sitio:</strong> Escola d'Art i Superior de Disseny de Vic</li>
+                <li><strong>Fecha:</strong> 2014 - 2016 · 2 años</li>
+                <li><strong>Ubicación:</strong> Vich, Cataluña, España</li>
+                <li><strong>Aptitudes:</strong> Fotomontaje, ilustración, maquetación, etc.</li>
+            </ul>
+        `
+            },
+            circulo2: {
+                titulo: 'Diseñador Gráfico',
+                contenido: `
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>Sitio:</strong> PIKMENT | Copisteria & Impremta Ràpida</li>
+                <li><strong>Fecha:</strong> jul. 2015 - jun. 2016 · 1 año</li>
+                <li><strong>Ubicación:</strong> Vich, Cataluña, España</li>
+                <li><strong>Aptitudes:</strong> Atención al cliente, fotocopias, diseño de tarjetas, etc.</li>
+            </ul>
+        `
+            },
+            circulo3: {
+                titulo: 'Encargado de Almacén',
+                contenido: `
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>Sitio:</strong> Ferreteria Comella | Ferreteria</li>
+                <li><strong>Fecha:</strong> jul. 2017 - ago. 2020 · 3 años 2 meses</li>
+                <li><strong>Ubicación:</strong> Vich, Cataluña, España</li>
+                <li><strong>Aptitudes:</strong> Atención al cliente, encargado de almacén, reposición en tienda, preparación de pedidos, etc.</li>
+            </ul>
+        `
+            },
+            circulo4: {
+                titulo: 'Mozo de Almacén',
+                contenido: `
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>Sitio:</strong> Bon Preu Balenyà | Magatzem</li>
+                <li><strong>Fecha:</strong> abr. 2021 - sept. 2021 · 6 meses</li>
+                <li><strong>Ubicación:</strong> Els Hostalets de Balenyà, Cataluña, España</li>
+                <li><strong>Aptitudes:</strong> Picking y preparación de comandas con transpaleta eléctrica.</li>
+            </ul>
+        `
+            },
+            circulo5Mobile: {
+                titulo: 'CFGS Desarrollo de Aplicaciones Web',
+                contenido: `
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>Sitio:</strong> iFP | Centro de Formación Profesional</li>
+                <li><strong>Fecha:</strong> 2021 - 2023 · 2 años</li>
+                <li><strong>Ubicación:</strong> Modalidad Online</li>
+                <li><strong>Aptitudes:</strong> HTML, CSS, JS, Java, SQL, etc.</li>
+                <br>
+                <li><strong>*Actualmente estoy trabajando en <a href="https://www.lasevaweb.com/ca"
+                        target="_blank">Lasevaweb</a> con contrato de prácticas.</strong></li>
+            </ul>
+        `
+            },
+            circuloPathMobile: {
+                titulo: 'Mozo de Almacén',
+                contenido: `
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>Sitio:</strong> Bon Preu Balenyà | Magatzem</li>
+                <li><strong>Fecha:</strong> abr. 2021 - sept. 2021 · 6 meses</li>
+                <li><strong>Ubicación:</strong> Els Hostalets de Balenyà, Cataluña, España</li>
+                <li><strong>Aptitudes:</strong> Picking y preparación de comandas con transpaleta eléctrica.</li>
+            </ul>
+        `
+            },
+            circuloPath: {
+                titulo: 'CFGS Desarrollo de Aplicaciones Web',
+                contenido: `
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>Sitio:</strong> iFP | Centro de Formación Profesional</li>
+                <li><strong>Fecha:</strong> 2021 - 2023 · 2 años</li>
+                <li><strong>Ubicación:</strong> Modalidad Online</li>
+                <li><strong>Aptitudes:</strong> HTML, CSS, JS, Java, SQL, etc.</li>
+                <br>
+                <li><strong>*Actualmente estoy trabajando en <a href="https://www.lasevaweb.com/ca"
+                        target="_blank">Lasevaweb</a> con contrato de prácticas.</strong></li>
+            </ul>
+        `
+            }
+        };
+
+        // Variable para el pop-up
+        var popup = null;
+
+        // Función para generar el pop-up
+        function generarPopup(idCirculo) {
+            // Elimina el pop-up anterior si existe
+            if (popup) {
+                popup.remove();
+            }
+
+            // Crea un nuevo pop-up
+            popup = document.createElement('div');
+            popup.innerHTML = `
+                <h2>${infoCirculos[idCirculo].titulo}</h2>
+                <p>${infoCirculos[idCirculo].contenido}</p>
+                <button id="cerrarPopup">Cerrar</button>
+            `;
+
+            // Estilos para el pop-up
+            popup.style.position = 'fixed';
+            popup.style.left = '50%';
+            popup.style.top = '50%';
+            popup.style.transform = 'translate(-50%, -50%)';
+            popup.style.border = '1px solid black';
+            popup.style.backgroundColor = 'white';
+            popup.style.padding = '20px';
+            popup.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+            popup.style.zIndex = '1000';
+
+            // Agrega el pop-up al cuerpo del documento
+            document.body.appendChild(popup);
+
+            // Funcionalidad para cerrar el pop-up
+            document.getElementById('cerrarPopup').addEventListener('click', function () {
+                popup.remove();
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var circulo1 = document.getElementById('circulo1');
+            var circulo2 = document.getElementById('circulo2');
+            var circulo3 = document.getElementById('circulo3');
+            var circulo4 = document.getElementById('circulo4');
+            var circuloPath = document.getElementById('circuloPath');
+
+            var circulo1Mobile = document.querySelector('#svgExperienciaMobile #circulo1');
+            var circulo2Mobile = document.querySelector('#svgExperienciaMobile #circulo2');
+            var circulo3Mobile = document.querySelector('#svgExperienciaMobile #circulo3');
+            var circuloPathMobile = document.querySelector('#svgExperienciaMobile #circuloPathMobile');
+            var circulo5Mobile = document.querySelector('#svgExperienciaMobile #circulo5mobile');
+
+            circulo1.addEventListener('click', function () {
+                generarPopup('circulo1');
+            });
+
+            circulo2.addEventListener('click', function () {
+                generarPopup('circulo2');
+            });
+
+            circulo3.addEventListener('click', function () {
+                generarPopup('circulo3');
+            });
+
+            circulo4.addEventListener('click', function () {
+                generarPopup('circulo4');
+            });
+
+            circuloPath.addEventListener('click', function () {
+                generarPopup('circuloPath');
+            });
+
+            // Agregamos los controladores de eventos a los círculos del segundo SVG
+            circulo1Mobile.addEventListener('click', function () {
+                generarPopup('circulo1');
+            });
+
+            circulo2Mobile.addEventListener('click', function () {
+                generarPopup('circulo2');
+            });
+
+            circulo3Mobile.addEventListener('click', function () {
+                generarPopup('circulo3');
+            });
+
+            circuloPathMobile.addEventListener('click', function () {
+                generarPopup('circuloPathMobile');
+            });
+
+            circulo5Mobile.addEventListener('click', function () {
+                generarPopup('circulo5Mobile');
+            });
+        });
+    </script>
+
+    <!-- JS TEXTAREA AUTO RESIZE -->
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const textarea = document.getElementById('mensaje');
+            textarea.addEventListener('input', autoResize, false);
+
+            function autoResize() {
+                this.style.height = 'auto';
+                this.style.height = this.scrollHeight + 'px';
+            }
+        });
+    </script>
+
+    <!-- JS FORMULARIO -->
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("-kfC7TudWQEhqFd9m");
+        })();
+    </script>
+    <script>
+        // agregar un controlador de eventos al formulario
+        document.getElementById('miFormulario').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // recopilar los datos del formulario
+            var datosFormulario = {
+                nombre: document.getElementById('nombre').value,
+                correo: document.getElementById('correo').value,
+                asunto: document.getElementById('asunto').value,
+                mensaje: document.getElementById('mensaje').value
+            };
+
+            // validación del formulario
+            if (!datosFormulario.nombre.trim() || !datosFormulario.correo.trim() || !datosFormulario.asunto.trim() || !datosFormulario.mensaje.trim()) {
+                var bannerError = document.getElementById('bannerError');
+                bannerError.style.display = 'block';
+                setTimeout(function () { bannerError.style.display = 'none'; }, 4000); // Opcional: ocultar después de 4 segundos
+                return; // detener la ejecución si la validación falla
+            }
+
+            // enviar el formulario utilizando emailjs
+            emailjs.send('service_z5oo216', 'template_1ou47wa', datosFormulario)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    document.getElementById('bannerExito').style.display = 'block';
+                    document.getElementById('miFormulario').reset();
+                },
+
+                    function (error) {
+                        console.log('FAILED...', error);
+                        document.getElementById('bannerExito').style.display = 'block';
+                        document.getElementById('bannerExito').style.backgroundColor = 'red';
+                        document.getElementById('bannerExito').textContent = 'Error al enviar el mensaje. Intente de nuevo más tarde.';
+                    });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
