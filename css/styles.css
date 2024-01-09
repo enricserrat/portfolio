@@ -122,20 +122,19 @@ a {
 .header .btn button {
   margin-left: 20px;
   font-weight: 700;
-  color: var(--white);
+  color: var(--blue);
   padding: 9px 25px;
   background: var(--soft-blue);
   border: none;
-  border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover:hover {
+.header .btn button:hover {
   background-color: var(--blue);
-  color: var(--white);
-  transform: scale(1.1);
+  color: var(--soft-blue);
 }
+
 .header .menu button {
   font-size: 38px;
   color: white;
@@ -317,6 +316,17 @@ a {
   height: 100%;
 }
 
+.btn-popup {
+  padding: 1.4vw;
+  border: solid 2px var(--black);
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+.btn-popup:hover {
+  transform: scale(1.1);
+}
+
 circle {
   transition: fill 0.3s ease;
   cursor: pointer;
@@ -449,7 +459,26 @@ textarea {
 }
 
 .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
+}
+
+.iconos-rrss-footer {
+  display: flex;
+  margin-right: 2px;
+}
+
+.icono-rrss-footer {
+  font-size: 32px;
+  margin-left: 1.6vw;
+  margin-top: 1.4vw;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icono-rrss-footer:hover {
+  transform: scale(1.2);
 }
 
 .list-container {
@@ -541,8 +570,6 @@ textarea {
   }
 
   #svgExperiencia {
-    /* transform: rotate(90deg);
-    margin: 48vw auto 40vw auto; */
     display: none;
   }
 
@@ -618,7 +645,6 @@ textarea {
   }
 
   circle {
-    /* Aumenta el tamaño como prefieras, por ejemplo: */
     font-size: 2em;
   }
 }
