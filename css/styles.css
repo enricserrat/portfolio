@@ -141,7 +141,6 @@ a {
   color: white;
   background: transparent;
   border: none;
-
 }
 
 /* nav mobile */
@@ -240,6 +239,23 @@ a {
   color: #fff;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  position: relative; /* Añade esta línea */
+}
+
+.locked-icon::after {
+  content: "\f023";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  font-size: 2.2vw;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icono-skill.locked-icon {
+  color: rgba(255, 255, 255, 0.349);
 }
 
 .icono-skill:hover {
@@ -379,7 +395,7 @@ textarea {
 }
 
 #mensaje {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .boton-estilo {
@@ -400,23 +416,22 @@ textarea {
 }
 
 #bannerExito {
-    display: none;
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
+  display: none;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 #bannerError {
-    display: none;
-    background-color: red;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
+  display: none;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
 }
-
 
 /* FOOTER */
 .footer {
@@ -498,6 +513,10 @@ textarea {
 
   .icono-skill {
     font-size: 2.6rem;
+  }
+
+  .locked-icon::after {
+    font-size: 4vw;
   }
 
   .square-text {
