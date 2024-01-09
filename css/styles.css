@@ -320,6 +320,7 @@ a {
   padding: 1.4vw;
   border: solid 2px var(--black);
   background-color: white;
+  color: var(--black);
   transition: transform 0.3s;
 }
 
