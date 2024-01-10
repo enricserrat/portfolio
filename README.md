@@ -1,4 +1,4 @@
-[![Banner](./img/banner-portfolio.jpeg)](https://2dev4u.com/)
+[![Banner](./img/banner-portfolio.jpeg)](https://enricserrat.com/)
 
 Soy Enric, un desarrollador Front-End y Diseñador Web con una profunda pasión por la tecnología y un enfoque autodidacta. Actualmente, estoy llevando a cabo prácticas en el marco de mi formación en el Grado Superior de Desarrollo de Aplicaciones Web (DAW), colaborando con Lasevaweb. Mi rol en este equipo es aportar a proyectos innovadores, donde mi principal objetivo es optimizar las experiencias digitales y fortalecer la presencia online de diversas empresas.
 
