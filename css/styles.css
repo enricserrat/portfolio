@@ -94,6 +94,7 @@ a {
 
 .header .nav-links {
   list-style: none;
+  font-family: 'font-regular', sans-serif;
 }
 
 .header .nav-links li {
@@ -238,7 +239,7 @@ a {
   color: #fff;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  position: relative; /* Añade esta línea */
+  position: relative;
 }
 
 .locked-icon::after {
@@ -303,13 +304,8 @@ a {
 }
 
 /* EXPERIENCIA */
-/* #experiencia {
-  margin-top: 8vw;
-} */
-
 #svgExperiencia {
   margin-top: 4.8vw;
-  /* width: 700px; */
 }
 
 .square-exp {
