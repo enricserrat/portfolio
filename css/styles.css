@@ -95,6 +95,7 @@ a {
 .header .nav-links {
   list-style: none;
   font-family: 'font-regular', sans-serif;
+  font-size: 1.2vw;
 }
 
 .header .nav-links li {
@@ -129,6 +130,7 @@ a {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  font-size: 1.2vw;
 }
 
 .header .btn button:hover {
@@ -538,7 +540,7 @@ textarea {
   }
 
   .icono-skill {
-    font-size: 2.6rem;
+    font-size: 8vw;
   }
 
   .locked-icon::after {
