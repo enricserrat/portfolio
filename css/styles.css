@@ -191,7 +191,7 @@ a {
   font-size: 65px;
 }
 
-/* CLASS & ID STYLES */
+/* HERO */
 .square {
   height: 50vw;
   overflow: hidden;
@@ -227,6 +227,7 @@ a {
   transform: scale(1.2);
 }
 
+/* QUIEN SOY & SKILLS */
 #skills-logos {
   background: var(--black);
   display: grid;
@@ -280,6 +281,16 @@ a {
   font-size: 1.4vw;
 }
 
+#quien-soy a{
+  color: var(--blue);
+  transition: all 0.3s ease 0s;
+}
+
+#quien-soy a:hover{
+  color: var(--soft-blue);
+}
+
+/* API PROJECTS */
 #api-iso-soft {
   background-image: url(/img/isotipo-soft.svg);
   background-size: cover;
@@ -299,6 +310,7 @@ a {
   filter: grayscale(100%);
 }
 
+/* WEB PROJECTS */
 #web-iso-blue {
   background-image: url(/img/isotipo-blue.svg);
   background-size: cover;
