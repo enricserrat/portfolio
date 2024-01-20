@@ -53,10 +53,9 @@ h2 {
   width: fit-content;
   padding: 0.5rem 1rem;
   margin: 1.5rem 0;
-  border: var(--main-color) 1px solid;
+  border: var(--main-color) 2px solid;
   color: #0f0f0f;
   text-decoration: none;
-  border-radius: 10px;
   transition: 200ms linear;
   font-family: font-bold;
 }
