@@ -17,9 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- AOS SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Enric Serrat | Frontend Developer & Web Designer · Vic, Barcelona.</title>
     <meta name="description"
         content="Desarrollador Frontend y Diseñador Web con enfoque en innovación y usabilidad. Descubre mis proyectos únicos que combinan creatividad y tecnología avanzada.">
+    <meta name="keywords" content="desarrollador frontend Vic, diseño web Barcelona, UX/UI diseño, desarrollo responsive, JavaScript profesional, creatividad digital, proyectos web innovadores, soluciones web a medida, portafolio diseño web, servicios de desarrollo web en Barcelona">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -130,11 +134,24 @@
             <div class="square square-text col-lg-6 col-md-12">
                 <h2>API Projects</h2>
                 <p>Proyectos enfocados en APIs para funciones específicas. Aplicaciones con interfaces intuitivas y
-                    adaptativas, integrando
-                    datos dinámicos y conectándose a servicios externos, mostrando innovación y técnica.</p>
-                <a href="https://eipreveal.enricserrat.com/" target="_blank">
-                    <img src="/img/project-1.svg" alt="Logo del proyecto eipreveal" draggable="false" title="Hecho con RapidAPI y Picocss">
-                </a>
+                    adaptativas, integrando datos dinámicos y conectándose a servicios externos, mostrando innovación y
+                    técnica.</p>
+                <div class="flip-card" data-aos="zoom-in">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/img/project-1.svg" alt="Logo del proyecto eipreveal" draggable="false">
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Tecnologías utilizadas:</p>
+                            <div class="iconos-proyecto">
+                                <i class="icono-skill fab fa-html5"></i>
+                                <i class="icono-skill fab fa-css3-alt"></i>
+                                <i class="icono-skill fab fa-js"></i>
+                            </div>
+                            <a href="https://eipreveal.enricserrat.com/" target="_blank">Ir al proyecto</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- (SQUARE 6) ISO API PROJECTS -->
@@ -153,9 +170,22 @@
                     desarrollado por mí,
                     garantiza unicidad y calidad. Comprometido con UI/UX elegantes y garantizando responsividad en cada
                     sitio.</p>
-                <a href="https://2dev4u.com/" target="_blank">
-                    <img src="/img/project-2.svg" alt="Logo de mi proyecto 2dev4u" draggable="false" title="Hecho con Laravel y Bootstrap">
-                </a>
+                    <div class="flip-card" data-aos="zoom-in">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/project-2.svg" alt="Logo del proyecto 2dev4u" draggable="false">
+                            </div>
+                            <div class="flip-card-back dev4u-back">
+                                <p>Tecnologías utilizadas:</p>
+                                <div class="iconos-proyecto">
+                                    <i class="icono-skill fab fa-laravel"></i>
+                                    <i class="icono-skill fab fa-js"></i>
+                                    <i class="icono-skill fab fa-bootstrap"></i>
+                                </div>
+                                <a href="https://2dev4u.com/" target="_blank">Ir al proyecto</a>
+                            </div>
+                        </div>
+                    </div>
             </div>
 
             <!-- (SQUARE 8) ISO WEB PROJECTS -->
@@ -552,7 +582,11 @@
         });
     </script>
 
-
+    <!-- AOS SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

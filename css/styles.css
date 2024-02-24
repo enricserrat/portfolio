@@ -94,7 +94,7 @@ a {
 
 .header .nav-links {
   list-style: none;
-  font-family: 'font-regular', sans-serif;
+  font-family: "font-regular", sans-serif;
   font-size: 1.2vw;
 }
 
@@ -281,12 +281,12 @@ a {
   font-size: 1.4vw;
 }
 
-#quien-soy a{
+#quien-soy a {
   color: var(--blue);
   transition: all 0.3s ease 0s;
 }
 
-#quien-soy a:hover{
+#quien-soy a:hover {
   color: var(--soft-blue);
 }
 
@@ -369,6 +369,71 @@ circle:hover {
 
 #svgExperienciaMobile {
   display: none;
+}
+
+/* flip card */
+.flip-card {
+  background-color: transparent;
+  width: 22vw;
+  height: 22vw;
+  perspective: 1000px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: filter 0.3s ease-in-out;
+  z-index: 9999;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #151923;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.iconos-proyecto .icono-skill {
+  margin-right: 1.6vw;
+}
+
+.flip-card-back {
+  padding-top: 4vw;
+}
+
+.flip-card-back a {
+  color: rgb(255, 255, 255);
+  font-size: 1.2vw;
+  text-decoration: underline;
+  display: block;
+  padding-top: 2.4vw;
+}
+
+.dev4u-back {
+  background-color: #533ED3;
 }
 
 /* CONTACTO */
@@ -601,6 +666,28 @@ textarea {
 
   .square img {
     height: 30vw;
+  }
+
+  .flip-card,
+  .flip-card-front img {
+    width: 33vw;
+    height: 33vw;
+  }
+
+  .flip-card-back {
+    padding-top: inherit;
+  }
+
+  .flip-card-back p {
+    font-size: 3vw;
+  }
+
+  .flip-card-back a {
+    font-size: 3vw;
+  }
+
+    .flip-card-back i {
+    font-size: 6.8vw;
   }
 
   #hero-info {
