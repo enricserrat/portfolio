@@ -1,2 +1,18 @@
 @import url("reset.css");
 
+#form input,
+#form button {
+  margin-top: 0.5rem;
+}
+
+#form small {
+  display: block;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.875em;
+  color: #6c757d;
+}
+
+#results {
+  white-space: pre-wrap;
+}
