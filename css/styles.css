@@ -433,7 +433,7 @@ circle:hover {
 }
 
 .dev4u-back {
-  background-color: #533ED3;
+  background-color: #533ed3;
 }
 
 /* CONTACTO */
@@ -613,11 +613,11 @@ textarea {
 
   #skills-logos {
     grid-template-columns: repeat(4, 1fr);
-    padding: 12% 12%;
+    padding: 9% 9%;
   }
 
   .icono-skill {
-    font-size: 8vw;
+    font-size: 10vw;
   }
 
   .locked-icon::after {
@@ -686,7 +686,7 @@ textarea {
     font-size: 3vw;
   }
 
-    .flip-card-back i {
+  .flip-card-back i {
     font-size: 6.8vw;
   }
 
