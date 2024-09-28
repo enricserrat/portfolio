@@ -38,7 +38,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#quien-soy-skills">Skills</a></li>
-                <li><a href="#api-projects">Proyectos</a></li>
+                <li><a href="#web-projects">Proyectos</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
             </ul>
         </nav>
@@ -52,7 +52,7 @@
             <div class="overlay-content">
                 <a style="font-family: 'font-bold', sans-serif;"
                     href="https://enricserrat.com/index.html#quien-soy-skills" onclick="closeNav()">Skills</a>
-                <a style="font-family: 'font-bold', sans-serif;" href="https://enricserrat.com/index.html#api-projects"
+                <a style="font-family: 'font-bold', sans-serif;" href="https://enricserrat.com/index.html#web-projects"
                     onclick="closeNav()">Proyectos</a>
                 <a style="font-family: 'font-bold', sans-serif;" href="https://enricserrat.com/index.html#experiencia"
                     onclick="closeNav()">Experiencia</a>
@@ -127,41 +127,6 @@
         </div>
     </section>
 
-    <!-- API PROJECTS -->
-    <section id="api-projects" class="container-fluid">
-        <div class="row">
-
-            <!-- (SQUARE 5) API PROJECTS -->
-            <div class="square square-text col-lg-6 col-md-12">
-                <h2>API Projects</h2>
-                <p>Proyectos enfocados en APIs para funciones específicas. Aplicaciones con interfaces intuitivas y
-                    adaptativas, integrando datos dinámicos y conectándose a servicios externos, mostrando innovación y
-                    técnica.</p>
-                <div class="flip-card" data-aos="zoom-in">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="/img/project-1.svg" alt="Logo del proyecto eipreveal" draggable="false">
-                        </div>
-                        <div class="flip-card-back">
-                            <p>Tecnologías utilizadas:</p>
-                            <div class="iconos-proyecto">
-                                <i class="icono-skill fab fa-html5"></i>
-                                <i class="icono-skill fab fa-css3-alt"></i>
-                                <i class="icono-skill fab fa-js"></i>
-                            </div>
-                            <a href="https://eipreveal.enricserrat.com/" target="_blank"
-                                style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block;">Ir
-                                al proyecto</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- (SQUARE 6) ISO API PROJECTS -->
-            <div class="square col-lg-6 col-md-12" id="api-iso-soft"></div>
-        </div>
-    </section>
-
     <!-- WEB PROJECTS -->
     <section id="web-projects" class="container-fluid">
         <div class="row">
@@ -173,27 +138,102 @@
                     desarrollado por mí,
                     garantiza unicidad y calidad. Comprometido con UI/UX elegantes y garantizando responsividad en cada
                     sitio.</p>
-                <div class="flip-card" data-aos="zoom-in">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="/img/project-2.svg" alt="Logo del proyecto 2dev4u" draggable="false">
-                        </div>
-                        <div class="flip-card-back dev4u-back">
-                            <p>Tecnologías utilizadas:</p>
-                            <div class="iconos-proyecto">
-                                <i class="icono-skill fab fa-laravel"></i>
-                                <i class="icono-skill fab fa-js"></i>
-                                <i class="icono-skill fab fa-bootstrap"></i>
-                            </div>
-                            <a href="https://2dev4u.com/" target="_blank"
-                                style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block;">Ir
-                                al proyecto</a>
-                        </div>
 
+                <div class="flip-card-container">
+
+                    <!-- 2DEV4U -->
+                    <div class="flip-card" data-aos="zoom-in">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/project-2.svg" alt="Logo del proyecto 2dev4u" draggable="false">
+                            </div>
+                            <div class="flip-card-back dev4u-back">
+                                <p>Tecnologías utilizadas:</p>
+                                <div class="iconos-proyecto">
+                                    <i class="icono-skill fab fa-laravel"></i>
+                                    <i class="icono-skill fab fa-js"></i>
+                                    <i class="icono-skill fab fa-bootstrap"></i>
+                                </div>
+                                <a href="https://2dev4u.com/" target="_blank"
+                                    style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease;"
+                                    onmouseover="this.style.backgroundColor='#90F577'; this.style.color='#543ED3';"
+                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+                                    Ir al proyecto
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ENZPROD -->
+                    <div class="flip-card" data-aos="zoom-in">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/project-3.svg" alt="Logo del proyecto 2dev4u" draggable="false">
+                            </div>
+                            <div class="flip-card-back enz-back">
+                                <p>Tecnologías utilizadas:</p>
+                                <div class="iconos-proyecto">
+                                    <div class="iconos-proyecto">
+                                        <i class="icono-skill fab fa-react"></i>
+                                        <i class="icono-skill fab fa-node-js"></i>
+                                        <i class="icono-skill fab fa-npm"></i>
+                                    </div>
+
+                                </div>
+                                <a href="https://enzprod.com/" target="_blank"
+                                    style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease;"
+                                    onmouseover="this.style.backgroundColor='#E10071'; this.style.color='#fff';"
+                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+                                    Ir al proyecto
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- (SQUARE 8) ISO WEB PROJECTS -->
+            <div class="square col-lg-6 col-md-12" id="api-iso-soft"></div>
+        </div>
+    </section>
+
+    <!-- API PROJECTS -->
+    <section id="api-projects" class="container-fluid">
+        <div class="row">
+
+            <!-- (SQUARE 5) API PROJECTS -->
+            <div class="square square-text col-lg-6 col-md-12">
+                <h2>API Projects</h2>
+                <p>Proyectos enfocados en APIs para funciones específicas. Aplicaciones con interfaces intuitivas y
+                    adaptativas, integrando datos dinámicos y conectándose a servicios externos, mostrando innovación y
+                    técnica.</p>
+                <div class="flip-card-container">
+                    <div class="flip-card" data-aos="zoom-in">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/img/project-1.svg" alt="Logo del proyecto eipreveal" draggable="false">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Tecnologías utilizadas:</p>
+                                <div class="iconos-proyecto">
+                                    <i class="icono-skill fab fa-html5"></i>
+                                    <i class="icono-skill fab fa-css3-alt"></i>
+                                    <i class="icono-skill fab fa-js"></i>
+                                </div>
+                                <a href="https://eipreveal.enricserrat.com/" target="_blank"
+                                    style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease;"
+                                    onmouseover="this.style.backgroundColor='#F5EF60'; this.style.color='#101';"
+                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
+                                    Ir al proyecto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- (SQUARE 6) ISO API PROJECTS -->
             <div class="square col-lg-6 col-md-12" id="web-iso-blue"></div>
         </div>
     </section>
@@ -319,8 +359,8 @@
         <div class="footer-child list-container">
             <ul>
                 <li><a href="#quien-soy-skills">Sobre mi</a></li>
-                <li><a href="#api-projects">API Projects</a></li>
                 <li><a href="#web-projects">WEB Projects</a></li>
+                <li><a href="#api-projects">API Projects</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
             </ul>
         </div>

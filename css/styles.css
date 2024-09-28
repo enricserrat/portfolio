@@ -272,6 +272,11 @@ a {
   padding: 6vw 6vw;
 }
 
+.square-text .flip-card-container {
+  padding-bottom: -6vw;
+  margin-right: -6vw;
+}
+
 .square-text h2 {
   font-family: "font-regular";
 }
@@ -377,12 +382,15 @@ circle:hover {
   width: 22vw;
   height: 22vw;
   perspective: 1000px;
+  /* Propiedades removidas:
   position: absolute;
   bottom: 0;
   left: 0;
+  */
   transition: filter 0.3s ease-in-out;
   z-index: 9999;
 }
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -432,8 +440,20 @@ circle:hover {
   padding-top: 2.4vw;
 }
 
+.flip-card-container {
+  display: flex;
+  gap: 0vw;
+  justify-content: flex-start;
+  margin-top: 6.5vw;
+  margin-left: -6vw;
+}
+
 .dev4u-back {
   background-color: #533ed3;
+}
+
+.enz-back {
+  background-color: black;
 }
 
 /* CONTACTO */
@@ -624,9 +644,6 @@ textarea {
     font-size: 4vw;
   }
 
-  .square-text {
-    padding: 13vw 8vw;
-  }
 
   .square-text h2 {
     font-size: 8vw;
