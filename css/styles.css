@@ -654,6 +654,10 @@ textarea {
     font-size: 4vw;
   }
 
+    .square-text {
+    padding: 10vw 6vw;
+  }
+
   .square img {
     height: 48vw;
   }
