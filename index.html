@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+<script src="config.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -21,12 +22,25 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Enric Serrat | Frontend Developer & Web Designer · Vic, Barcelona.</title>
+    <meta name="google-site-verification" id="google-site-verification" content="" />
+    <script>
+        document.getElementById('google-site-verification').setAttribute('content', CONFIG.GOOGLE_SITE_VERIFICATION);
+    </script>
     <meta name="description"
         content="Desarrollador Frontend y Diseñador Web con enfoque en innovación y usabilidad. Descubre mis proyectos únicos que combinan creatividad y tecnología avanzada.">
     <meta name="keywords"
         content="desarrollador frontend Vic, diseño web Barcelona, UX/UI diseño, desarrollo responsive, JavaScript profesional, creatividad digital, proyectos web innovadores, soluciones web a medida, portafolio diseño web, servicios de desarrollo web en Barcelona">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', CONFIG.GOOGLE_ANALYTICS_ID);
+</script>
 
 <body>
 
@@ -183,7 +197,7 @@
                                 </div>
                                 <a href="https://enzprod.com/" target="_blank"
                                     style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease;"
-                                    onmouseover="this.style.backgroundColor='#E10071'; this.style.color='#fff';"
+                                    onmouseover="this.style.backgroundColor='#E10071'; this.style.color='#000';"
                                     onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
                                     Ir al proyecto
                                 </a>
