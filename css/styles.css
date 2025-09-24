@@ -154,7 +154,7 @@ a {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 100000;
   left: 0;
   top: 0;
   background-color: #00447ce4;
@@ -691,6 +691,7 @@ textarea {
 
   .flip-card,
   .flip-card-front img {
+    z-index: 0;
     width: 33vw;
     height: 33vw;
   }
