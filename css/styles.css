@@ -337,6 +337,7 @@ a {
   background-color: white;
   color: var(--black);
   transition: transform 0.3s;
+  margin-top: 1.4vw;
 }
 
 .btn-popup:hover {
@@ -654,7 +655,7 @@ textarea {
     font-size: 4vw;
   }
 
-    .square-text {
+  .square-text {
     padding: 11vw 6vw;
   }
 
@@ -766,5 +767,40 @@ textarea {
 
   circle {
     font-size: 2em;
+  }
+
+  .lang-switcher {
+    margin-right: 24px;
+  }
+}
+
+/* ===== I18N language switcher ===== */
+.lang-switcher {
+  display: flex;
+  gap: 10px;
+  margin-left: 14px;
+}
+
+.lang-btn {
+  font-family: "font-bold", sans-serif;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border: 2px solid var(--soft-blue);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all .25s;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  background: var(--soft-blue);
+  color: var(--blue);
+}
+
+/* Mejora pop-up accesible en móvil */
+@media (max-width: 992px) {
+  .btn-popup {
+    padding: 14px;
   }
 }

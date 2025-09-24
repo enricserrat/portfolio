@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <script src="config.js"></script>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- FONTAWESOME ICONS -->
     <script src="https://kit.fontawesome.com/02ae4acaa4.js" crossorigin="anonymous"></script>
+
     <!-- ANIMATE.CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- INTER FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
     <!-- AOS SCROLL -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Enric Serrat | Frontend Developer & Web Designer · Vic, Barcelona.</title>
+    <title data-i18n="meta.title">Enric Serrat | Frontend Developer & Web Designer · Vic, Barcelona.</title>
+
     <meta name="google-site-verification" id="google-site-verification" content="" />
     <script>
         document.getElementById('google-site-verification').setAttribute('content', CONFIG.GOOGLE_SITE_VERIFICATION);
     </script>
-    <meta name="description"
+
+    <meta name="description" id="meta-description"
         content="Desarrollador Frontend y Diseñador Web con enfoque en innovación y usabilidad. Descubre mis proyectos únicos que combinan creatividad y tecnología avanzada.">
-    <meta name="keywords"
+    <meta name="keywords" id="meta-keywords"
         content="desarrollador frontend Vic, diseño web Barcelona, UX/UI diseño, desarrollo responsive, JavaScript profesional, creatividad digital, proyectos web innovadores, soluciones web a medida, portafolio diseño web, servicios de desarrollo web en Barcelona">
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://enricserrat.com/">
 </head>
@@ -50,15 +59,24 @@
         <div class="logo">
             <img src="/img/logo-light.svg" alt="Logo de Enric Serrat" draggable="false">
         </div>
+
         <nav>
             <ul class="nav-links">
-                <li><a href="#quien-soy-skills">Skills</a></li>
-                <li><a href="#web-projects">Proyectos</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#quien-soy-skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#web-projects" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
             </ul>
         </nav>
 
-        <a class="btn" href="#contacto" style="font-family: 'font-bold', sans-serif;"><button>Contacto</button></a>
+        <div class="lang-switcher">
+            <button id="btn-es" class="lang-btn">ES</button>
+            <button id="btn-ca" class="lang-btn active">CAT</button>
+        </div>
+
+
+        <a class="btn" href="#contacto" style="font-family: 'font-bold', sans-serif;">
+            <button data-i18n="nav.contact">Contacto</button>
+        </a>
 
         <a onclick="openNav()" class="menu" href="#"><button><i class="fa-sharp fa-solid fa-bars"></i></button></a>
 
@@ -66,13 +84,14 @@
             <a onclick="closeNav()" href="#" class="close">&times;</a>
             <div class="overlay-content">
                 <a style="font-family: 'font-bold', sans-serif;"
-                    href="https://enricserrat.com/index.html#quien-soy-skills" onclick="closeNav()">Skills</a>
+                    href="https://enricserrat.com/index.html#quien-soy-skills" onclick="closeNav()"
+                    data-i18n="nav.skills">Skills</a>
                 <a style="font-family: 'font-bold', sans-serif;" href="https://enricserrat.com/index.html#web-projects"
-                    onclick="closeNav()">Proyectos</a>
+                    onclick="closeNav()" data-i18n="nav.projects">Proyectos</a>
                 <a style="font-family: 'font-bold', sans-serif;" href="https://enricserrat.com/index.html#experiencia"
-                    onclick="closeNav()">Experiencia</a>
+                    onclick="closeNav()" data-i18n="nav.experience">Experiencia</a>
                 <a style="font-family: 'font-bold', sans-serif;" href="https://enricserrat.com/index.html#contacto"
-                    onclick="closeNav()">Contacto</a>
+                    onclick="closeNav()" data-i18n="nav.contact">Contacto</a>
             </div>
         </div>
     </header>
@@ -84,8 +103,8 @@
             <!-- (SQUARE 1) HERO CONTENT -->
             <div class="square col-lg-6 col-md-12" id="hero-info">
                 <h1>Enric Serrat</h1>
-                <h2 class="animate__animated animate__backInLeft">Frontend Developer</h2>
-                <h2 class="animate__animated animate__backInRight">Web Designer</h2>
+                <h2 class="animate__animated animate__backInLeft" data-i18n="hero.role1">Frontend Developer</h2>
+                <h2 class="animate__animated animate__backInRight" data-i18n="hero.role2">Web Designer</h2>
                 <div class="iconos-rrss">
                     <a href="https://linkedin.com/in/enric-serrat-marc%C3%A9-b885ab204/" target="_blank">
                         <span><i class="icono-rrss fa-brands fa-linkedin"></i></span>
@@ -93,9 +112,6 @@
                     <a href="https://github.com/enricserrat" target="_blank">
                         <span><i class="icono-rrss fa-brands fa-github"></i></span>
                     </a>
-                    <!-- <a href="https://behance.net/enric-serrat" target="_blank">
-                        <span><i class="icono-rrss fa-brands fa-square-behance"></i></span>
-                    </a> -->
                 </div>
             </div>
 
@@ -130,16 +146,17 @@
 
             <!-- (SQUARE 4) QUIEN SOY Y SKILLS INFO -->
             <div class="square square-text col-lg-6 col-md-12" id="quien-soy">
-                <h2>¿Quién soy?</h2>
-                <h2>¿Cuáles son mis skills?</h2>
-                <p>¡Ey! Soy Enric, Front-End Developer & Web Designer con +3 años de experiencia. Busco trabajo remoto a
+                <h2 data-i18n="about.title1">¿Quién soy?</h2>
+                <h2 data-i18n="about.title2">¿Cuáles son mis skills?</h2>
+                <p data-i18n="about.copy">
+                    ¡Ey! Soy Enric, Front-End Developer & Web Designer con +3 años de experiencia. Busco trabajo remoto
+                    a
                     media jornada y, a la vez, uso este espacio como escaparate de proyectos para futuros clientes. Me
-                    encanta convertir ideas en webs claras, funcionales y con carácter. <a
-                        href="https://www.linkedin.com/in/enric-serrat-marc%C3%A9-b885ab204/"
-                        target="_blank">¡Hablemos!</a></p>
+                    encanta convertir ideas en webs claras, funcionales y con carácter.
+                    <a href="https://www.linkedin.com/in/enric-serrat-marc%C3%A9-b885ab204/" target="_blank"
+                        data-i18n="about.cta">¡Hablemos!</a>
+                </p>
             </div>
-
-
 
         </div>
     </section>
@@ -150,14 +167,14 @@
 
             <!-- (SQUARE 7) WEB PROJECTS -->
             <div class="square square-text col-lg-6 col-md-12">
-                <h2>WEB Projects</h2>
-                <p>Diseño sitios web únicos, rápidos y a medida. Mimo cada detalle para asegurar una experiencia fluida,
-                    estética y responsive, con UI/UX limpias, accesibles y bien optimizadas para rendimiento y SEO.</p>
+                <h2 data-i18n="web.h2">WEB Projects</h2>
+                <p data-i18n="web.p">
+                    Diseño sitios web únicos, rápidos y a medida. Mimo cada detalle para asegurar una experiencia
+                    fluida,
+                    estética y responsive, con UI/UX limpias, accesibles y bien optimizadas para rendimiento y SEO.
+                </p>
 
                 <div class="flip-card-container">
-
-
-
 
                     <!-- ENZPROD -->
                     <div class="flip-card" data-aos="zoom-in">
@@ -166,21 +183,18 @@
                                 <img src="/img/project-3.svg" alt="Logo del proyecto 2dev4u" draggable="false">
                             </div>
                             <div class="flip-card-back enz-back">
-                                <p>Tecnologías utilizadas:</p>
+                                <p data-i18n="proj.tech">Tecnologías utilizadas:</p>
                                 <div class="iconos-proyecto">
-                                    <div class="iconos-proyecto">
-                                        <i class="icono-skill fab fa-react"></i>
-                                        <i class="icono-skill fab fa-node-js"></i>
-                                        <i class="icono-skill fab fa-npm"></i>
-                                    </div>
-
+                                    <i class="icono-skill fab fa-react"></i>
+                                    <i class="icono-skill fab fa-node-js"></i>
+                                    <i class="icono-skill fab fa-npm"></i>
                                 </div>
+
                                 <a href="https://enzprod.com/" target="_blank"
                                     style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease;"
                                     onmouseover="this.style.backgroundColor='#E10071'; this.style.color='#fff';"
-                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
-                                    Ir al proyecto
-                                </a>
+                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';"
+                                    data-i18n="proj.go">Ir al proyecto</a>
                             </div>
                         </div>
                     </div>
@@ -192,7 +206,7 @@
                                 <img src="/img/project-4.svg" alt="Logo del proyecto 2dev4u" draggable="false">
                             </div>
                             <div class="flip-card-back acordmanagers-back">
-                                <p>Tecnologías utilizadas:</p>
+                                <p data-i18n="proj.tech">Tecnologías utilizadas:</p>
                                 <div class="iconos-proyecto">
                                     <i class="icono-skill fab fa-wordpress"></i>
                                     <i class="icono-skill fab fa-css3-alt"></i>
@@ -201,13 +215,12 @@
                                 <a href="https://acordmanagers.com/" target="_blank"
                                     style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease;"
                                     onmouseover="this.style.backgroundColor='#fff'; this.style.color='#ff5b06';"
-                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
-                                    Ir al proyecto
-                                </a>
-
+                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';"
+                                    data-i18n="proj.go">Ir al proyecto</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -222,10 +235,12 @@
 
             <!-- (SQUARE 5) API PROJECTS -->
             <div class="square square-text col-lg-6 col-md-12">
-                <h2>API Projects</h2>
-                <p>Desarrollo aplicaciones centradas en APIs para conectar datos dinámicos y servicios externos. Diseño
+                <h2 data-i18n="api.h2">API Projects</h2>
+                <p data-i18n="api.p">
+                    Desarrollo aplicaciones centradas en APIs para conectar datos dinámicos y servicios externos. Diseño
                     interfaces intuitivas y adaptativas, enfocadas en la eficiencia, escalabilidad y una experiencia
-                    fluida.</p>
+                    fluida.
+                </p>
 
                 <div class="flip-card-container">
                     <div class="flip-card" data-aos="zoom-in">
@@ -234,7 +249,7 @@
                                 <img src="/img/project-1.svg" alt="Logo del proyecto eipreveal" draggable="false">
                             </div>
                             <div class="flip-card-back">
-                                <p>Tecnologías utilizadas:</p>
+                                <p data-i18n="proj.tech">Tecnologías utilizadas:</p>
                                 <div class="iconos-proyecto">
                                     <i class="icono-skill fab fa-html5"></i>
                                     <i class="icono-skill fab fa-css3-alt"></i>
@@ -243,9 +258,8 @@
                                 <a href="https://eipreveal.enricserrat.com/" target="_blank"
                                     style="background-color: white; color: black; padding: 10px 20px; margin-top: 2.4vw; text-decoration: none; display: inline-block; transition: background-color 0.3s ease, color 0.3s ease;"
                                     onmouseover="this.style.backgroundColor='#F5EF60'; this.style.color='#101';"
-                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';">
-                                    Ir al proyecto
-                                </a>
+                                    onmouseout="this.style.backgroundColor='white'; this.style.color='black';"
+                                    data-i18n="proj.go">Ir al proyecto</a>
                             </div>
                         </div>
                     </div>
@@ -260,10 +274,10 @@
     <!-- EXPERIENCIA -->
     <section id="experiencia" class="container-fluid">
         <div class="row">
-
             <div class="square square-text square-exp col-md-12" id="experiencia">
-                <h2>Experiencia</h2>
+                <h2 data-i18n="exp.h2">Experiencia</h2>
 
+                <!-- SVG DESKTOP -->
                 <svg id="svgExperiencia" width="96%" viewBox="0 0 1494 106" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 17H1477" stroke="black" stroke-width="3" stroke-linecap="round" />
@@ -307,52 +321,48 @@
                         fill="#79B7E8" stroke="black" stroke-width="2" />
                 </svg>
 
-                <p class="exp-text">A la izquierda, mis inicios como Diseñador Gráfico; a la derecha, mi rol actual en
-                    Diseño y Desarrollo Web. Explora mi
-                    trayectoria haciendo clic en los puntos destacados.</p>
+                <p class="exp-text" data-i18n="exp.sub">
+                    A la izquierda, mis inicios como Diseñador Gráfico; a la derecha, mi rol actual en
+                    Diseño y Desarrollo Web. Explora mi trayectoria haciendo clic en los puntos destacados.
+                </p>
             </div>
-
         </div>
     </section>
 
     <!-- CONTACTO -->
     <section id="contacto" class="container-fluid">
         <div class="row">
-
             <div class="square square-text square-contacto col-md-12" id="experiencia">
-                <h2>Contacto</h2>
+                <h2 data-i18n="contact.h2">Contacto</h2>
 
                 <form id="miFormulario">
                     <div class="form-row">
                         <div class="form-cntrl">
-                            <input type="text" id="nombre" name="nombre" placeholder="TU NOMBRE"><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="TU NOMBRE"
+                                data-i18n-ph="contact.name"><br>
                         </div>
                         <div class="form-cntrl">
-                            <input type="email" id="correo" name="correo" placeholder="TU CORREO"><br>
+                            <input type="email" id="correo" name="correo" placeholder="TU CORREO"
+                                data-i18n-ph="contact.email"><br>
                         </div>
                     </div>
 
                     <div class="form-cntrl">
-                        <input type="text" id="asunto" name="asunto" placeholder="ASUNTO"><br>
+                        <input type="text" id="asunto" name="asunto" placeholder="ASUNTO"
+                            data-i18n-ph="contact.subject"><br>
                     </div>
 
                     <div class="form-cntrl">
-                        <textarea id="mensaje" name="mensaje" placeholder="MENSAJE"></textarea><br>
+                        <textarea id="mensaje" name="mensaje" placeholder="MENSAJE"
+                            data-i18n-ph="contact.message"></textarea><br>
                     </div>
 
-                    <div id="bannerExito">
-                        ¡Mensaje enviado con éxito!
-                    </div>
+                    <div id="bannerExito" data-i18n="contact.success">¡Mensaje enviado con éxito!</div>
+                    <div id="bannerError" data-i18n="contact.error">Por favor, complete todos los campos.</div>
 
-                    <div id="bannerError">
-                        Por favor, complete todos los campos.
-                    </div>
-
-                    <input type="submit" value="ENVIAR MENSAJE" class="boton-estilo">
+                    <input type="submit" value="ENVIAR MENSAJE" class="boton-estilo" data-i18n-value="contact.send">
                 </form>
-
             </div>
-
         </div>
     </section>
 
@@ -369,24 +379,20 @@
                 <a href="https://linkedin.com/in/enric-serrat-marc%C3%A9-b885ab204/" target="_blank">
                     <span><i class="icono-rrss-footer fa-brands fa-linkedin"></i></span>
                 </a>
-                <!-- <a href="https://behance.net/enric-serrat" target="_blank">
-                    <span><i class="icono-rrss-footer fa-brands fa-square-behance"></i></span>
-                </a> -->
             </div>
         </div>
 
         <div class="footer-child list-container">
             <ul>
-                <li><a href="#quien-soy-skills">Sobre mi</a></li>
-                <li><a href="#web-projects">WEB Projects</a></li>
-                <li><a href="#api-projects">API Projects</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#quien-soy-skills" data-i18n="footer.about">Sobre mí</a></li>
+                <li><a href="#web-projects" data-i18n="footer.web">WEB Projects</a></li>
+                <li><a href="#api-projects" data-i18n="footer.api">API Projects</a></li>
+                <li><a href="#experiencia" data-i18n="footer.exp">Experiencia</a></li>
             </ul>
         </div>
     </footer>
 
-
-    <!-- Enlace a Bootstrap JS y dependencias -->
+    <!-- LIBS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -396,260 +402,119 @@
 
     <!-- JS MENU MOBILE -->
     <script>
-        function openNav() {
-            document.getElementById("mobile-menu").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("mobile-menu").style.width = "0%";
-        }
+        function openNav() { document.getElementById("mobile-menu").style.width = "100%"; }
+        function closeNav() { document.getElementById("mobile-menu").style.width = "0%"; }
     </script>
 
-    <!-- JS SVG EXPERIENCIA -->
+    <!-- JS SVG EXPERIENCIA (textos vienen del i18n de lang.js) -->
     <script>
-        // Información para cada círculo
-        var infoCirculos = {
-            circulo1: {
-                titulo: 'CFGM Asistencia al Producto Gráfico Impreso',
-                contenido: `
-            <ul style="list-style-type: none; padding-left: 0;">
-                <li><strong>Sitio:</strong> Escola d'Art i Superior de Disseny de Vic</li>
-                <li><strong>Fecha:</strong> 2014 - 2016 · 2 años</li>
-                <li><strong>Ubicación:</strong> Vich, Cataluña, España</li>
-                <li><strong>Aptitudes:</strong> Fotomontaje, ilustración, maquetación, etc.</li>
-            </ul>
-        `
-            },
-            circulo2: {
-                titulo: 'Diseñador Gráfico',
-                contenido: `
-            <ul style="list-style-type: none; padding-left: 0;">
-                <li><strong>Sitio:</strong> PIKMENT | Copisteria & Impremta Ràpida</li>
-                <li><strong>Fecha:</strong> jul. 2015 - jun. 2016 · 1 año</li>
-                <li><strong>Ubicación:</strong> Vich, Cataluña, España</li>
-                <li><strong>Aptitudes:</strong> Atención al cliente, fotocopias, diseño de tarjetas, etc.</li>
-            </ul>
-        `
-            },
-            circulo3: {
-                titulo: 'Encargado de Almacén',
-                contenido: `
-            <ul style="list-style-type: none; padding-left: 0;">
-                <li><strong>Sitio:</strong> Ferreteria Comella | Ferreteria</li>
-                <li><strong>Fecha:</strong> jul. 2017 - ago. 2020 · 3 años 2 meses</li>
-                <li><strong>Ubicación:</strong> Vich, Cataluña, España</li>
-                <li><strong>Aptitudes:</strong> Atención al cliente, encargado de almacén, reposición en tienda, preparación de pedidos, etc.</li>
-            </ul>
-        `
-            },
-            circulo4: {
-                titulo: 'Mozo de Almacén',
-                contenido: `
-            <ul style="list-style-type: none; padding-left: 0;">
-                <li><strong>Sitio:</strong> Bon Preu Balenyà | Magatzem</li>
-                <li><strong>Fecha:</strong> abr. 2021 - sept. 2021 · 6 meses</li>
-                <li><strong>Ubicación:</strong> Els Hostalets de Balenyà, Cataluña, España</li>
-                <li><strong>Aptitudes:</strong> Picking y preparación de comandas con transpaleta eléctrica.</li>
-            </ul>
-        `
-            },
-            circulo5Mobile: {
-                titulo: 'Desarrollador de Sitios Web',
-                contenido: `
-                <ul style="list-style-type: none; padding-left: 0;">
-                    <li><strong>Empresa:</strong> <a href="https://www.lasevaweb.com/ca" target="_blank">Lasevaweb Global Web Services S.L.</a></li>
-                    <li><strong>Fecha:</strong> septiembre 2023 - febrero 2025 · 1 año 6 meses</li>
-                    <li><strong>Ubicación:</strong> Vic, Cataluña, España - Presencial</li>
-                    <li><strong>Jornada:</strong> Completa</li>
-                    <br>
-                    <li><strong>*<em>Actualmente busco trabajo remoto como Front-End Developer y Diseñador Web.</strong></li>
-                </ul>
-            `
-            },
-            circuloPathMobile: {
-                titulo: 'Mozo de Almacén',
-                contenido: `
-            <ul style="list-style-type: none; padding-left: 0;">
-                <li><strong>Sitio:</strong> Bon Preu Balenyà | Magatzem</li>
-                <li><strong>Fecha:</strong> abr. 2021 - sept. 2021 · 6 meses</li>
-                <li><strong>Ubicación:</strong> Els Hostalets de Balenyà, Cataluña, España</li>
-                <li><strong>Aptitudes:</strong> Picking y preparación de comandas con transpaleta eléctrica.</li>
-            </ul>
-        `
-            },
-            circuloPath: {
-                titulo: 'Desarrollador de Sitios Web',
-                contenido: `
-                <ul style="list-style-type: none; padding-left: 0;">
-                    <li><strong>Empresa:</strong> <a href="https://www.lasevaweb.com/ca" target="_blank">Lasevaweb Global Web Services S.L.</a></li>
-                    <li><strong>Fecha:</strong> septiembre 2023 - febrero 2025 · 1 año 6 meses</li>
-                    <li><strong>Ubicación:</strong> Vic, Cataluña, España - Presencial</li>
-                    <li><strong>Jornada:</strong> Completa</li>
-                    <br>
-                    <li><strong>*<em>Actualmente busco trabajo remoto como Front-End Developer y Diseñador Web.</strong></li>
-                </ul>
-            `
+        (function () {
+            // --- utilidades seguras ---
+            function t(key) {
+                try { return (window.I18N && window.I18N.t) ? window.I18N.t(key) : (key === 'exp.close' ? 'Cerrar' : key); }
+                catch { return key; }
             }
-        };
-
-        // Variable para el pop-up
-        var popup = null;
-
-        // Función para generar el pop-up
-        function generarPopup(idCirculo) {
-            // Elimina el pop-up anterior si existe
-            if (popup) {
-                popup.remove();
+            function popupHTMLfor(id) {
+                try { return (window.I18N && window.I18N.popups && window.I18N.popups[id]) ? window.I18N.popups[id] : ''; }
+                catch { return ''; }
             }
 
-            // Crea un nuevo pop-up
-            popup = document.createElement('div');
-            popup.innerHTML = `
-                <h2>${infoCirculos[idCirculo].titulo}</h2>
-                <p>${infoCirculos[idCirculo].contenido}</p>
-                <button id="cerrarPopup" class="btn-popup">Cerrar</button>
-            `;
+            // --- popup ---
+            var popup = null;
+            window.generarPopup = function (html) {
+                if (popup) popup.remove();
+                popup = document.createElement('div');
+                popup.innerHTML = `
+      <div style="font-family:'font-regular',sans-serif;max-width:640px">
+        ${html}
+        <button id="cerrarPopup" class="btn-popup">${t('exp.close')}</button>
+      </div>`;
+                popup.style.position = 'fixed';
+                popup.style.left = '50%';
+                popup.style.top = '50%';
+                popup.style.transform = 'translate(-50%, -50%)';
+                popup.style.border = '1px solid black';
+                popup.style.backgroundColor = 'white';
+                popup.style.padding = '20px';
+                popup.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+                popup.style.zIndex = '1000';
+                document.body.appendChild(popup);
+                document.getElementById('cerrarPopup').addEventListener('click', () => popup.remove());
+            };
 
-            // Estilos para el pop-up
-            popup.style.position = 'fixed';
-            popup.style.left = '50%';
-            popup.style.top = '50%';
-            popup.style.transform = 'translate(-50%, -50%)';
-            popup.style.border = '1px solid black';
-            popup.style.backgroundColor = 'white';
-            popup.style.padding = '20px';
-            popup.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-            popup.style.zIndex = '1000';
+            // --- binds ---
+            document.addEventListener('DOMContentLoaded', () => {
+                const bind = (id) => {
+                    const el = document.getElementById(id);
+                    if (el) el.addEventListener('click', () => generarPopup(popupHTMLfor(id)));
+                };
+                ['circulo1', 'circulo2', 'circulo3', 'circulo4', 'circuloPath'].forEach(bind);
 
-            // Agrega el pop-up al cuerpo del documento
-            document.body.appendChild(popup);
-
-            // Funcionalidad para cerrar el pop-up
-            document.getElementById('cerrarPopup').addEventListener('click', function () {
-                popup.remove();
+                const bindM = (sel, id) => {
+                    const el = document.querySelector('#svgExperienciaMobile ' + sel);
+                    if (el) el.addEventListener('click', () => generarPopup(popupHTMLfor(id)));
+                };
+                bindM('#circulo1', 'circulo1');
+                bindM('#circulo2', 'circulo2');
+                bindM('#circulo3', 'circulo3');
+                bindM('#circuloPathMobile', 'circuloPathMobile');
+                bindM('#circulo5mobile', 'circulo5Mobile');
             });
-        }
-
-        document.addEventListener('DOMContentLoaded', (event) => {
-            var circulo1 = document.getElementById('circulo1');
-            var circulo2 = document.getElementById('circulo2');
-            var circulo3 = document.getElementById('circulo3');
-            var circulo4 = document.getElementById('circulo4');
-            var circuloPath = document.getElementById('circuloPath');
-
-            var circulo1Mobile = document.querySelector('#svgExperienciaMobile #circulo1');
-            var circulo2Mobile = document.querySelector('#svgExperienciaMobile #circulo2');
-            var circulo3Mobile = document.querySelector('#svgExperienciaMobile #circulo3');
-            var circuloPathMobile = document.querySelector('#svgExperienciaMobile #circuloPathMobile');
-            var circulo5Mobile = document.querySelector('#svgExperienciaMobile #circulo5mobile');
-
-            circulo1.addEventListener('click', function () {
-                generarPopup('circulo1');
-            });
-
-            circulo2.addEventListener('click', function () {
-                generarPopup('circulo2');
-            });
-
-            circulo3.addEventListener('click', function () {
-                generarPopup('circulo3');
-            });
-
-            circulo4.addEventListener('click', function () {
-                generarPopup('circulo4');
-            });
-
-            circuloPath.addEventListener('click', function () {
-                generarPopup('circuloPath');
-            });
-
-            // Agregamos los controladores de eventos a los círculos del segundo SVG
-            circulo1Mobile.addEventListener('click', function () {
-                generarPopup('circulo1');
-            });
-
-            circulo2Mobile.addEventListener('click', function () {
-                generarPopup('circulo2');
-            });
-
-            circulo3Mobile.addEventListener('click', function () {
-                generarPopup('circulo3');
-            });
-
-            circuloPathMobile.addEventListener('click', function () {
-                generarPopup('circuloPathMobile');
-            });
-
-            circulo5Mobile.addEventListener('click', function () {
-                generarPopup('circulo5Mobile');
-            });
-        });
+        })();
     </script>
+
 
     <!-- JS TEXTAREA AUTO RESIZE -->
     <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
+        window.addEventListener('DOMContentLoaded', () => {
             const textarea = document.getElementById('mensaje');
-            textarea.addEventListener('input', autoResize, false);
-
-            function autoResize() {
+            if (!textarea) return;
+            const autoResize = function () {
                 this.style.height = 'auto';
                 this.style.height = this.scrollHeight + 'px';
-            }
+            };
+            textarea.addEventListener('input', autoResize, false);
         });
     </script>
 
     <!-- JS FORMULARIO -->
     <script type="text/javascript">
-        (function () {
-            emailjs.init("-kfC7TudWQEhqFd9m");
-        })();
+        (function () { emailjs.init("-kfC7TudWQEhqFd9m"); })();
     </script>
-
     <script>
-        // agregar un controlador de eventos al formulario
         document.getElementById('miFormulario').addEventListener('submit', function (event) {
             event.preventDefault();
-
-            // recopilar los datos del formulario
             var datosFormulario = {
                 nombre: document.getElementById('nombre').value,
                 correo: document.getElementById('correo').value,
                 asunto: document.getElementById('asunto').value,
                 mensaje: document.getElementById('mensaje').value
             };
-
-            // validación del formulario
             if (!datosFormulario.nombre.trim() || !datosFormulario.correo.trim() || !datosFormulario.asunto.trim() || !datosFormulario.mensaje.trim()) {
                 var bannerError = document.getElementById('bannerError');
                 bannerError.style.display = 'block';
-                setTimeout(function () { bannerError.style.display = 'none'; }, 4000); // Opcional: ocultar después de 4 segundos
-                return; // detener la ejecución si la validación falla
+                setTimeout(function () { bannerError.style.display = 'none'; }, 4000);
+                return;
             }
-
-            // enviar el formulario utilizando emailjs
             emailjs.send('service_z5oo216', 'template_1ou47wa', datosFormulario)
-                .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                .then(function () {
                     document.getElementById('bannerExito').style.display = 'block';
                     document.getElementById('miFormulario').reset();
-                },
-
-                    function (error) {
-                        console.log('FAILED...', error);
-                        document.getElementById('bannerExito').style.display = 'block';
-                        document.getElementById('bannerExito').style.backgroundColor = 'red';
-                        document.getElementById('bannerExito').textContent = 'Error al enviar el mensaje. Intente de nuevo más tarde.';
-                    });
+                }, function () {
+                    const b = document.getElementById('bannerExito');
+                    b.style.display = 'block';
+                    b.style.backgroundColor = 'red';
+                    b.textContent = window.I18N.t('contact.failAlt');
+                });
         });
     </script>
 
     <!-- AOS SCROLL -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script> AOS.init(); </script>
 
+    <!-- I18N -->
+    <script src="js/lang.js"></script>
 </body>
 
 </html>
